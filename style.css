@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color:crimson;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: black;
 
 }
@@ -15,21 +16,64 @@ body{
     background-color: white;
     margin: 20%;
     width: 30%;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 10%;
 }
 .container h3{
     font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container input{
-    border: 0;
+    border: 1px solid rgb(195, 152, 72);
     outline: 0;
-    background-color: rgb(216, 216, 140);
-    padding: 6px;
+    background-color: rgb(237, 237, 232);
+    padding: 16px;
     width: 100%;
+    margin-top: 16px;
 }
 .container #btn{
     margin-top: 10px;
     padding: 7px;
-    background-color: rgb(20, 255, 122);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border: 0;
-    font-size: 14px;
+    font-size: 18px;
+    width: 100%;
+}
+#imgbox{
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+}
+#imgbox img{
+    width: 100%;
+    padding: 10px;
+}
+#imgbox.show-img{
+    max-height: 400px;
+    margin: 10px auto;
+}
+.error{
+    animation: shake 0.2s linear 10;
+}
+@keyframes shake {
+    
+0% {
+    transform: translateX(0);
+} 
+25% {
+    transform: translateX(-2px);
+} 
+50% {
+    transform: translateX(0);
+} 
+75% {
+    transform: translateX(2px);
+} 
+100% {
+    transform: translateX(0);
+} 
 }
